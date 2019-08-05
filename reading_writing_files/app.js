@@ -26,4 +26,13 @@ fs.readFile('readMe.txt', 'utf8', (err, data) => {
     });
 });
 
+// To DELETE FILES
+fs.unlink('writeMe.txt', ( error ) => {
+    if ( error ) {
+        console.log( error );
+    };
+
+    console.log('File Deleted!');
+});
+
 console.log('I AM NOT BLOCKED');
